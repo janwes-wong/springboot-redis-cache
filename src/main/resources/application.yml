@@ -1,0 +1,40 @@
+server:
+  port: 9200
+spring:
+  application:
+    name: redis-cache-test
+  # MySQL数据源配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test_data?characterEncoding=UTF-8
+    username: root
+    password: root
+  # redis配置
+  redis:
+    host: localhost
+    port: 6379
+# mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    # 配置控制台打印带参数sql执行语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    root: info
+    com:
+      janwes: debug
+  # 控制台日志打印格式
+  pattern:
+    console: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger): %msg%n\'
+  #console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %msg - %logger{15}%n\'
+# knife4j配置
+knife4j:
+  # 开启增强配置
+  enable: true
+  # 如果为true则开启生产环境屏蔽
+  production: false
+  basic:
+    enable: true
+    username: ${spring.application.name}
+    password: 123
