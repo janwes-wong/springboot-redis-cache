@@ -1,9 +1,9 @@
-package com.janwes.model;
+package com.janwes.common;
 
 /**
  * @author Janwes
  * @version 1.0
- * @package com.janwes.model
+ * @package com.janwes.common
  * @date 2021/6/4 13:49
  * @description 状态码枚举
  */

@@ -1,6 +1,6 @@
 package com.janwes.exception;
 
-import com.janwes.model.StatusCode;
+import com.janwes.common.StatusCode;
 
 /**
  * @author Janwes

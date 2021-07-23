@@ -10,6 +10,6 @@
 #### @CacheEvict
 清除缓存，可用于类或方法上；在执行完目标方法后，清除缓存中对应key的数据(如果缓存中有对应key的数据缓存的话)
 #### @CachePut
-可用于类或方法上；在执行完目标方法后，并将方法的返回值作为value，并以键值对的形式存入缓存中
+可用于类或方法上；在执行完目标方法后，并将方法的返回值作为value，并以键值对的形式存入缓存中，该注解@CachePut的key必须和@Cacheable的key一致
 #### @Caching
 此注解即可作为@Cacheable、@CacheEvict、@CachePut三种注解中的的任何一种或几种来使用

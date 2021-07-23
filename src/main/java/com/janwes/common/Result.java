@@ -1,4 +1,4 @@
-package com.janwes.model;
+package com.janwes.common;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * @author Janwes
  * @version 1.0
- * @package com.janwes.model
+ * @package com.janwes.common
  * @date 2021/6/4 13:45
  * @description 统一返回数据实体类
  */

@@ -1,6 +1,6 @@
 package com.janwes.controller;
 
-import com.janwes.model.Result;
+import com.janwes.common.Result;
 import com.janwes.pojo.Location;
 import com.janwes.service.LocationService;
 import io.swagger.annotations.Api;

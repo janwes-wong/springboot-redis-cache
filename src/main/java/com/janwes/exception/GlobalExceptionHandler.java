@@ -1,7 +1,7 @@
 package com.janwes.exception;
 
-import com.janwes.model.Result;
-import com.janwes.model.StatusCode;
+import com.janwes.common.Result;
+import com.janwes.common.StatusCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

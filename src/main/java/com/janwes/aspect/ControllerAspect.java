@@ -2,8 +2,8 @@ package com.janwes.aspect;
 
 import com.alibaba.fastjson.JSON;
 import com.janwes.exception.BaseException;
-import com.janwes.model.Result;
-import com.janwes.model.StatusCode;
+import com.janwes.common.Result;
+import com.janwes.common.StatusCode;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
