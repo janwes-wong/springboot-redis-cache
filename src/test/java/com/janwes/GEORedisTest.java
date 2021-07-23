@@ -33,7 +33,8 @@ public class GEORedisTest {
         Distance distance = redisTemplate.opsForGeo().distance("location",
                 "兴东地铁站",
                 "留仙洞地铁站",
-                RedisGeoCommands.DistanceUnit.METERS);
+                RedisGeoCommands.DistanceUnit.METERS); // 距离单位
         System.out.println(distance);
+        System.out.println("两地之间的距离：" + distance.getValue() + " " + distance.getUnit());
     }
 }
