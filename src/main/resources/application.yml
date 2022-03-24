@@ -5,7 +5,7 @@ spring:
     name: redis-cache-test
   # MySQL数据源配置
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test_data?characterEncoding=UTF-8
     username: root
     password: root

@@ -53,5 +53,9 @@ public class RedisTest {
         userInfos.add(new UserInfo("赵六", "meal"));
 
         redisTemplate.opsForValue().set("userInfo", userInfos, 10, TimeUnit.MINUTES);
+        Object o = redisTemplate.opsForValue().get("userInfo");
+        List<UserInfo> userInfoList = (List<UserInfo>) o;
+        System.out.println(o);
+        System.out.println(userInfoList);
     }
 }

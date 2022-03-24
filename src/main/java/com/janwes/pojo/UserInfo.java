@@ -36,4 +36,12 @@ public class UserInfo implements Serializable {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "username='" + username + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 }
